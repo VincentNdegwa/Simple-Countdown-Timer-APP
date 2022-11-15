@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(to bottom right, pink, yellow);
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.timer-holder {
+  display: inline-flex;
+  border: 0px;
+}
+button {
+  margin-top: 20px;
+  background: linear-gradient(to bottom left, pink, yellow);
+  width: 5rem;
+  height: 2rem;
+  border: 0;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.countdownHolder {
+  height: 30rem;
+  width: 35rem;
+  background: linear-gradient(to bottom right, pink, #e6e60e);
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+#countdown-disp {
+  margin-top: 8rem;
+  font-size: 45px;
+  justify-items: center;
+  display: flex;
+  margin-left: 13rem;
+  font-weight: bold;
+}
+input {
+  background: pink;
+  border: 0;
+  font-size: 20px;
+  font-weight: bold;
+  width: 70px;
+  height: 30px;
+}
+button:hover {
+  background: transparent;
+}
+.holder {
+  margin-top: 100px;
+}
+
+@media (max-width: 488px) {
+  .countdownHolder {
+    width: auto;
+  }
+  #countdown-disp {
+    margin-left: 3.5rem;
+  }
+}
